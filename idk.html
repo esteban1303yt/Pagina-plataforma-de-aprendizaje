@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos SENA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #5a2ca0, #00c4cc);
+      padding: 15px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header input {
+      width: 50%;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h3 {
+      color: #5a2ca0;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .filter {
+      margin-bottom: 20px;
+    }
+
+    .filter button {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      background: #00b341;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Cursos */
+    .courses {
+      flex: 1;
+    }
+
+    .course {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 8px solid #00b341;
+    }
+
+    .course h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #008f39;
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .badge {
+      background: #f0f0f0;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .modalidad {
+      background: #002b5c;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <input type="text" placeholder="¿Qué te gustaría aprender?">
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    
+    <!-- Filtros -->
+    <aside class="sidebar">
+      <div class="filter">
+        <h3>Modalidad</h3>
+        <button>Presencial (260)</button>
+      </div>
+
+      <div class="filter">
+        <h3>Nivel de formación</h3>
+        <p>Curso especial (260)</p>
+      </div>
+
+      <div class="filter">
+        <h3>Área de conocimiento</h3>
+        <p>Cliente (110)</p>
+        <p>Producción y transformación (88)</p>
+        <p>Diseño (26)</p>
+        <p>Materiales herramientas (23)</p>
+      </div>
+    </aside>
+
+    <!-- Cursos -->
+    <main class="courses">
+      <div class="course">
+        <h2>ACABADOS ARQUITECTÓNICOS DE CONSTRUCCIÓN</h2>
+        <div class="badges">
+          <span class="badge">90 horas</span>
+          <span class="badge">Complementaria</span>
+          <span class="badge">Curso especial</span>
+          <span class="badge">14+ Restricción</span>
+          <span class="modalidad">Presencial</span>
+        </div>
+      </div>
+
+      <div class="course">
+        <h2>ACABADOS PARA PIEZAS TEXTILES ARTESANALES</h2>
+        <div class="badges">
+          <span class="badge">40 horas</span>
+          <span class="badge">Complementaria</span>
+          <span class="badge">Curso especial</span>
+          <span class="badge">14+ Restricción</span>
+          <span class="modalidad">Presencial</span>
+        </div>
+      </div>
+
+      <div class="course">
+        <h2>ACEITES ESENCIALES: EXTRACCIÓN, USOS Y APLICACIONES</h2>
+        <div class="badges">
+          <span class="badge">48 horas</span>
+          <span class="badge">Complementaria</span>
+          <span class="badge">Curso especial</span>
+          <span class="badge">14+ Restricción</span>
+          <span class="modalidad">Presencial</span>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
