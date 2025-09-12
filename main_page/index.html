@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formación presencial</title>
+    <title>Página principal</title>
     <link rel="icon" href="https://betowa.sena.edu.co/favicon.ico">
-    <link rel="stylesheet" href="/cursos_precenciales/styles.css">
+    <link rel="stylesheet" href="/main_page/styles.css">
 </head>
 <body>
     <!-- Encabezado -->
@@ -14,14 +14,16 @@
             <img src="https://betowa.sena.edu.co/assets/logos/sena-logo.svg" alt="logo-sena">
             <h1 id="title-white">Plataforma de aprendizaje</h1>
         </div>
+        <!-- Barra de navegación -->
         <nav class="header-nav">
             <ul>
-                <li><a href="/main/index.html">Inicio</a></li>
+                <li><a href="#" class="active">Inicio</a></li>
                 <li><a href="https://seleccion.senasofiaplus.edu.co/sofia-evaluacion/evaluaciones.html">Pruebas</a></li>
                 <li><a href="https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer">Certificados</a></li>
                 <li><a href="https://portal.senasofiaplus.edu.co/">Ayuda y soporte</a></li>
             </ul>
         </nav>
+        <!-- Botones de inicio y registro-->
         <div class="botones-header">
             <a href="https://betowa.sena.edu.co/iniciar-sesion" class="boton-iniciar">Iniciar sesión</a>
             <a href="https://betowa.sena.edu.co/registrarse" class="boton-registrar">Registrarse</a>
@@ -30,6 +32,27 @@
 
     <!-- Información pricipal -->
     <main>
+
+        <!-- Texto de tipo de formación -->
+        <section id="inicio">
+            <h2 id="title-white">Tipo de formación</h2>
+            <p id="txt-white">Elije tipo de formación la cual se ajuste a sus necesidades</p>
+        </section>
+
+        <!-- Tipo de formación -->
+        <section class="tipo-formacion">
+            <article class="formacion">
+                <h3>Formación virtual</h3>
+                <img src="https://betowa.sena.edu.co/_next/image?url=%2Fassets%2Fimg%2Fvirtual.png&w=640&q=75" alt="Formación virtual">
+                <a href="/virtual_page/cursos_virtuales.html" class="boton-formacion">Ver cursos</a>
+            </article>
+
+            <article class="formacion">
+                <h3>Formación presencial</h3>
+                <img src="https://betowa.sena.edu.co/_next/image?url=%2Fassets%2Fimg%2Fpresencial.png&w=640&q=75" alt="Formación presencial">
+                <a href="/presencial_page/cursos_presenciales.html" class="boton-formacion">Ver cursos</a>
+            </article>
+        </section>
 
     </main>
     <!-- Pie de página -->

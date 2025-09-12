@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
+    <title>Formación virtual</title>
     <link rel="icon" href="https://betowa.sena.edu.co/favicon.ico">
-    <link rel="stylesheet" href="/main/styles.css">
+    <link rel="stylesheet" href="/virtual_page/styles.css">
 </head>
 <body>
     <!-- Encabezado -->
@@ -14,16 +14,14 @@
             <img src="https://betowa.sena.edu.co/assets/logos/sena-logo.svg" alt="logo-sena">
             <h1 id="title-white">Plataforma de aprendizaje</h1>
         </div>
-        <!-- Barra de navegación -->
         <nav class="header-nav">
             <ul>
-                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="/main_page/index.html">Inicio</a></li>
                 <li><a href="https://seleccion.senasofiaplus.edu.co/sofia-evaluacion/evaluaciones.html">Pruebas</a></li>
                 <li><a href="https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer">Certificados</a></li>
                 <li><a href="https://portal.senasofiaplus.edu.co/">Ayuda y soporte</a></li>
             </ul>
         </nav>
-        <!-- Botones de inicio y registro-->
         <div class="botones-header">
             <a href="https://betowa.sena.edu.co/iniciar-sesion" class="boton-iniciar">Iniciar sesión</a>
             <a href="https://betowa.sena.edu.co/registrarse" class="boton-registrar">Registrarse</a>
@@ -32,29 +30,64 @@
 
     <!-- Información pricipal -->
     <main>
+        <aside class="filtros">
+            <h3>Filtros de búsqueda</h3>
+            <div class="filtro">
+        <h4>Modalidad</h4>
+        <button class="activo">Virtual (3)</button>
+            </div>
+            <div class="filtro">
+        <h4>Nivel de formación</h4>
+        <a href="/presencial_page/cursos_presenciales.html" class="otro-curso">Cursos presenciales (3)</a>
+            </div>
+            <div class="filtro">
+        <h4>Área de conocimiento</h4>
+        <ul>
+            <li>Cliente (42)</li>
+            <li>Producción y transformación (42)</li>
+            <li>Diseño (42)</li>
+            <li>Materiales herramientas (42)</li>
+        </ul>
+            </div>
+        </aside>
 
-        <!-- Texto de tipo de formación -->
-        <section id="inicio">
-            <h2 id="title-white">Tipo de formación</h2>
-            <p id="txt-white">Elije tipo de formación la cual se ajuse a tus necesidades</p>
-        </section>
+        <div class="cursos">
+            <!-- Cursos -->
+            <div class="curso">
+            <h2>ABORDAJE DE PERSONAS EN RIESGO DE CONSUMO DE SUSTANCIAS PSICOACTIVAS</h2>
+            <div class="detalles">
+                <span class="detalle">48 horas</span>
+                <span class="detalle">Complementaria</span>
+                <span class="detalle">Complementaria virtual</span>
+                <span class="detalle">14+ Restricción</span>
+                <span class="modalidad">Virtual</span>
+            </div>
+            </div>
 
-        <!-- Tipo de formación -->
-        <section class="tipo-formacion">
-            <article class="formacion">
-                <h3>Formación virtual</h3>
-                <img src="https://betowa.sena.edu.co/_next/image?url=%2Fassets%2Fimg%2Fvirtual.png&w=640&q=75" alt="Formación virtual">
-                <a href="/cursos_virtuales/cursos_virtuales.html" class="boton-formacion">Ver cursos</a>
-            </article>
+            <div class="curso">
+            <h2>ADICTIVOS: ANALISIS Y CONTROL DE CALIDAD EN LA INDUSTRIA ALIMENTARIA</h2>
+            <div class="detalles">
+                <span class="detalle">40 horas</span>
+                <span class="detalle">Complementaria</span>
+                <span class="detalle">Complementaria virtual</span>
+                <span class="detalle">14+ Restricción</span>
+                <span class="modalidad">Virtual</span>
+            </div>
+            </div>
 
-            <article class="formacion">
-                <h3>Formación presencial</h3>
-                <img src="https://betowa.sena.edu.co/_next/image?url=%2Fassets%2Fimg%2Fpresencial.png&w=640&q=75" alt="Formación presencial">
-                <a href="/cursos_precenciales/cursos_presenciales.html" class="boton-formacion">Ver cursos</a>
-            </article>
-        </section>
-
+            <div class="curso">
+            <h2>ANALISIS DE RIESGOS EN SISTEMAS DE AGUA Y SANEAMIENTO</h2>
+            <div class="detalles">
+                <span class="detalle">48 horas</span>
+                <span class="detalle">Complementaria</span>
+                <span class="detalle">Complementaria virtual</span>
+                <span class="detalle">14+ Restricción</span>
+                <span class="modalidad">Virtual</span>
+            </div>
+            </div>
+        </div>
     </main>
+
     <!-- Pie de página -->
     <footer>
         <div class="info">
